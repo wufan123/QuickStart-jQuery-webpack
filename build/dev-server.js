@@ -73,5 +73,5 @@ module.exports = app.listen(port, function (err) {
     return
   }
 
-  opn(uri, {app: ['google chrome']}).then(() => { })
+  opn(uri).then(() => { })
 })
