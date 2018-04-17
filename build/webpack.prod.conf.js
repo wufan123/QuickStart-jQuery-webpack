@@ -106,7 +106,7 @@ Object.keys(entries).forEach(function (name) {
   proWebpackConfig.plugins.push(plugin)
 })
 
-if (config.build.forceLint) {
+/*if (config.build.forceLint) {
   const WebpackShellPlugin = require('webpack-shell-plugin')
   proWebpackConfig.plugins.push(
     new WebpackShellPlugin({
@@ -114,6 +114,6 @@ if (config.build.forceLint) {
       onBuildEnd: []
     })
   )
-}
+}*/
 
 module.exports = proWebpackConfig

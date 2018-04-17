@@ -21,7 +21,7 @@ module.exports = {
     },
     module: {
         loaders: [
-            {
+            /*{
                 test: /\.js$/,
                 loader: 'eslint-loader',
                 enforce: 'pre',
@@ -29,7 +29,7 @@ module.exports = {
                 options: {
                     formatter: require('eslint-friendly-formatter')
                 }
-            },
+            },*/
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
@@ -73,13 +73,13 @@ module.exports = {
         ]
     },
     plugins: [
-        new webpack.LoaderOptionsPlugin({
+/*        new webpack.LoaderOptionsPlugin({
             eslint: {
                 configFile: path.join(__dirname, '.eslintrc.js'),
                 formatter: require('eslint-friendly-formatter'),
                 useEslintrc: false
             }
-        }),
+        }),*/
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery'
